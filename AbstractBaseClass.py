@@ -17,9 +17,3 @@ class Shape(ABC):
     @abstractmethod
     def perimeter(self):
         pass
-
-class InvalidRectangle(Shape):
-    pass
-
-# Attempt to create an instance of the invalid subclass
-invalid_rectangle = InvalidRectangle()
