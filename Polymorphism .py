@@ -1,3 +1,11 @@
+"""
+Polymorphism is nothing but assigning behavior or value in a subclass to
+something that was already declared in the main class.
+Simply,polymorphism takes more than one form.
+
+"""
+
+
 class Cat:
     def make_sound(self):
         return "Meow!"
