@@ -3,11 +3,6 @@ In Python, a decorator is like a special function that you can use to modify or 
 It can add functionality to that function without changing its code. It's like adding extra features to a function without rewriting it.
 """
 
-
-def format(names):
-    return " ".join(names)
-
-
 def show_name_reversed(func):
     def wrapper(names):
         res = list(func(names))
@@ -15,7 +10,10 @@ def show_name_reversed(func):
         return "".join(res)
     return wrapper
 
+@show_name_reversed
+def format(names):
+    return names
 
-decorated = show_name_reversed(format)
-result = decorated(names=["mizzam"])
+
+result = format(names="mozzam")
 print(result)
