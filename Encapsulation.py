@@ -6,7 +6,7 @@ It allows the data to be hidden and accessed only through the defined methods, w
 """
 
 
-
+# Example 1
 
 class Car:
     def __init__(self, make, model):
@@ -27,4 +27,20 @@ my_car = Car(make="Toyota", model="Camry")
 my_car.accelerate(20)
 current_speed = my_car.get_speed()
 
-print(f"My {my_car._  } {my_car._Car__model}'s current speed is {current_speed} mph.")
+# print(f"My {my_car._  } {my_car._Car__model}'s current speed is {current_speed} mph.")
+
+
+
+
+# Example 2
+class Person:
+    def __init__(self):
+        self.name = "mozzam"
+        self.__age = 23
+
+    def __get_age(self):
+        return self.__age
+    
+obj = Person()
+print(obj._Person__get_age())
+        
