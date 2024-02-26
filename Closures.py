@@ -2,6 +2,9 @@
 For example, if you have a function that makes another function and gives it a number, that inner
 function can still remember and use that number even after the outer function has finished its job.
 This special ability is what we call a "closure." It helps you keep and use important information in your code.
+
+
+In simpler terms, a closure allows a function to remember and access the variables from the environment in which it was created.
 """
 
 # First Example
