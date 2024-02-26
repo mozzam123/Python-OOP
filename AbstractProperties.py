@@ -21,24 +21,25 @@ class ABC_Person(metaclass=ABCMeta):
         pass 
     
 class Person(ABC_Person):
-    def __init__(self, name, age) :
+    def __init__(self, name, age):
         self.name = name
-        self. age = age
+        self._age = age
 
     def greet(self):
         print(f"My name is {self.name}. How are you")
 
-
     @property
     def about(self):
-        print(f"My name is {self.name} and Im {self.age} years old")
+        print(f"My name is {self.name} and I'm {self._age} years old")
 
     @property
     def age(self):
-        print(f"My age is {self.age}")
-    
+        return self._age
+
+    @age.setter
     def age(self, value):
-        self.age = value
+        self._age = value
+
     
 
 
