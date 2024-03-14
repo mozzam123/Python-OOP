@@ -35,6 +35,7 @@ class Person:
     
 
 person = Person("mozzam", 22)
+print(person.about)
 person.age = 55
 print(person.about)
 
